@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearby Locations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Tabs Section -->
+    <header>
+        <nav class="tabs">
+            <ul>
+                <li id="tab-restaurants" class="active">Restaurants</li>
+                <li id="tab-farmer">Farmer's Markets</li>
+                <li id="tab-live">Live Events</li>
+                <li id="tab-ftl">Food Truck Locations</li>
+                <li id="tab-community">Community Events</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="content" class="content-section">
+        <h1>EPVecinos</h1>
+        <!-- Restaurant section -->
+        <div id="restaurants-section" class="tab-content active">
+
+            <form id="radius-form">
+                <p id="status">Fetching your location...</p>
+
+                <label for="radius">Search Radius (miles):</label>
+                <select type="number" id="radius">
+                    <option>2 Miles</option>
+                    <option>5 Miles</option>
+                    <option>10 Miles</option>
+                    <option>15 Miles</option>
+                </select>
+
+                <label>
+                    <input type="checkbox" id="local-only" checked> Local Only
+                </label>
+                
+                <button type="submit" class="btn">Search</button>
+            </form>
+
+            <ul id="restaurant-list"></ul>
+        </div>
+
+        <!-- Placeholder sections for other tabs -->
+
+        <!-- -->
+        <div id="mechanic-section" class="tab-content">
+            <h1>Farmer's Markets</h1>
+            <p id="status">Content will go here.</p>
+        </div>
+
+        <div id="hotels-section" class="tab-content">
+            <h1>Live Events</h1>
+            <p id="status">Content will go here.</p>
+        </div>
+
+        <div id="bars-section" class="tab-content">
+            <h1>Food Truck Locations</h1>
+            <p id="status">Content will go here.</p>
+        </div>
+
+        <div id="carwashes-section" class="tab-content">
+            <h1>Community Events</h1>
+            <p id="status">Content will go here.</p>
+        </div>
+
+        <div id="stores-section" class="tab-content">
+            <h1>Stores</h1>
+            <p id="status">Content will go here.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
